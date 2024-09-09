@@ -6,10 +6,10 @@ campaignTrail_temp.election_json = [
         "fields": {
             "year": 2016,
             "display_year": "2036",
-            "summary": "<style>\n  .shake {\n    display: inline-block;\n    animation: shake 7s ease-in-out infinite;\n  }\n\n@keyframes shake {\n    0% { transform: translate(0.5px, 0.5px) rotate(0deg); }\n    10% { transform: translate(-0.3px, -0.5px) rotate(-0.5deg); }\n    20% { transform: translate(-1px, 0px) rotate(0.5deg); }\n    30% { transform: translate(0.5px, 1px) rotate(0deg); }\n    40% { transform: translate(0.3px, -0.5px) rotate(0.5deg); }\n    50% { transform: translate(-0.3px, 0.5px) rotate(-0.5deg); }\n    60% { transform: translate(-0.5px, 0.1px) rotate(0deg); }\n    70% { transform: translate(0.5px, 0.3px) rotate(-0.5deg); }\n    80% { transform: translate(-0.1px, -0.1px) rotate(0.5deg); }\n    90% { transform: translate(0.5px, 1px) rotate(0deg); }\n    100% { transform: translate(0.5px, -1px) rotate(-0.5deg); }\n}\n@keyframes grow-shrink {\n  0% { transform: scale(1); }          /* Original size */\n  25% { transform: scale(1.05); }      /* Slightly larger */\n  50% { transform: scale(1); }         /* Back to original size */\n  75% { transform: scale(0.95); }      /* Slightly smaller */\n  100% { transform: scale(1); }        /* Back to original size */\n}\n.grow-shrink-effect {\n  display: inline-block;\n  animation: grow-shrink 2s ease-in-out infinite;\n}\n\n@keyframes fire-flicker {\n  0% { color: #ff4500; text-shadow: 0 0 10px #ff6347, 0 0 20px #ff4500, 0 0 30px #ff8c00; }\n  25% { color: #ff8c00; text-shadow: 0 0 15px #ff6347, 0 0 25px #ff4500, 0 0 35px #ffd700; }\n  50% { color: #ffd700; text-shadow: 0 0 20px #ff4500, 0 0 30px #ff8c00, 0 0 40px #ff4500; }\n  75% { color: #ff6347; text-shadow: 0 0 15px #ff8c00, 0 0 25px #ffd700, 0 0 35px #ff6347; }\n  100% { color: #ff4500; text-shadow: 0 0 10px #ff4500, 0 0 20px #ff6347, 0 0 30px #ff8c00; }\n}\n\n.fiery-effect {\n  font-weight: bold;\n  font-size: 1.2em;\n  animation: fire-flicker 20s infinite alternate;\n}\n\n</style>\n\n<div margin: 0px 5px 0px 0px;\"><p>Donald Trump is dead. Bernie Sanders is dead. And now we are all forced to live in the hell that they left for us. After Democrats won the 2032 election, their fourth consecutive White House win, the nation finally boiled over. Nearly 20 states refused to send any electors to Washington, declaring the election illegitimate. House representatives refused to take their seats. Right-wing terror groups, emboldened by the actions of these rogue states, have taken to the streets, wreaking havoc in a bid to break the authority of the federal government.</p>\n\n<p>Now, tragically, President-Elect Raphael Warnock has been assasinated in an Atlanta diner. The presidency falls to Pete Buttigieg. And with it, a solemn duty. Crush these insurgents and restore order.<b> It. Is.  <span class=\"shake\"> Happening.</span> </b>Afghanistan. Here. On our doorstep.</p>\n\n<p>If order is to be restored, you <b>have</b> to win this war. <i>Before</i> it really starts. Shut all of this nonsense down. When the next election comes—there should be <span class=\"fiery-effect\">no more doubters.</span></p></div>\n",
+            "summary": "<div margin: 5px 5px 5px 5px; padding: 2px;><p>Donald Trump is dead. Bernie Sanders is dead. And now we are all forced to live in the hell that they left for us.</p><p> After Democrats won the 2032 election, their fourth consecutive White House win, the nation finally boiled over. Nearly 20 states refused to send any electors to Washington, declaring the election illegitimate. Then house representatives refused to take their seats. Right-wing terror groups, emboldened by the actions of these rogue states, have taken to the streets, wreaking havoc in a bid to break the authority of the federal government. Now, tragically, President-Elect Raphael Warnock has been assasinated in an Atlanta diner.</p><p> <b> It. Is.  <span class=\"shake\"> Happening.</span> </b> Afghanistan. Here. On our doorstep.</p><p> The presidency now falls to Pete Buttigieg. And with it, a solemn duty. Crush these insurgents and restore order.</p> But, if order is to be restored, you <b>have</b> to win this war. <i>Before</i> it really starts. Shut all of this nonsense down. When the next election comes—there should be absolutely <span class=\"fiery-effect\">no more doubters.</span></p></div>\n",
             "image_url": "https://d1y822qhq55g6.cloudfront.net/default/_superImage/911_Image_Getty_Web.jpg",
-            "winning_electoral_vote_number": 270,
-            "advisor_url": "123",
+            "winning_electoral_vote_number": 272,
+            "advisor_url": "https://fordschool.umich.edu/sites/default/files/styles/open_graph/public/2023-09/chasten-buttigieg-extended-1090x681.jpg",
             "recommended_reading": "<div style='text-align: center;'><a href='https://2009-2017.state.gov/documents/organization/119629.pdf' class='flashing-text' style='font-size: 20px;'>Official Guide</a></div><style>@keyframes flash { 0% { color: rgb(255, 234, 0); } 33% { color: red; } 66% { color: black; } 100% { color: rgb(236, 244, 15); } } .flashing-text { font-weight: bold; animation: flash 2s infinite; }</style>",
             "has_visits": 1,
             "creator": "Dan Bryan",
@@ -18,48 +18,89 @@ campaignTrail_temp.election_json = [
     }
 ]
 
-
-
-// Function to safely update text content of an element
-function updateTextContent(selector, newText) {
-    const element = document.querySelector(selector);
-    if (element) {
-        element.textContent = newText;
-    }
-}
-
-// Update the main title
-updateTextContent('#inner_window_1 > h3', 'Do you have what it takes to SAVE OUR REPUBLIC?');
-
-// Get the list element
-const list = document.querySelector('#inner_window_1 > ul');
-if (list) {
-    // Clear existing list items
-    list.innerHTML = '';
+// Get the inner window element
+const innerWindow = document.querySelector('#inner_window_1');
+if (innerWindow) {
+    // Store the existing start button if it exists
+    const existingStartButton = innerWindow.querySelector('#game_start');
     
-    // Add new list items
+    // Clear existing content, but keep the start button if it exists
+    innerWindow.innerHTML = '';
+    if (existingStartButton) {
+        innerWindow.appendChild(existingStartButton);
+    }
+
+    // Add the h3 title
+    const title = document.createElement('h3');
+    title.textContent = '       Do you have what it takes to SAVE OUR REPUBLIC?';
+    title.style.marginLeft = '32px';
+    title.style.textAlign = 'center';
+    title.style.fontSize = '32px';
+    innerWindow.insertBefore(title, innerWindow.firstChild);
+
+    // Create a container for the image and list
+    const container = document.createElement('div');
+    container.style.display = 'flex';
+    container.style.alignItems = 'flex-start';
+
+    // Create an image container
+    const imgContainer = document.createElement('div');
+    imgContainer.style.width = '200px';
+    imgContainer.style.flexShrink = '0';
+    imgContainer.style.marginRight = '0px';
+    imgContainer.style.marginLeft = '20px';
+
+    // Add the image
+    const img = document.createElement('img');
+    img.src = 'https://i.postimg.cc/zvqr9cL3/mayor-pete.png';
+    img.alt = 'Combat Obscura';
+    img.style.width = '100%';
+    img.style.maxWidth = '400px';
+    imgContainer.appendChild(img);
+
+    container.appendChild(imgContainer);
+
+    // Create a text container
+    const textContainer = document.createElement('div');
+    textContainer.style.flex = '1';
+
+    // Create and add the list
+    const list = document.createElement('ul');
+list.style.margin = '0';
+list.style.paddingLeft = '20px';
+list.style.textAlign = 'left'; // Ensure left alignment
+
+
     const newItems = [
         'This is Boot-Edge-Edge: a speculative fiction political strategy game with dating sim elements.',
         'You play as Pete Buttigieg, and will guide him through the end of his first term as president and, hopefully, to re-election.',
         'You will orchestrate his campaign and military strategy, as well as his efforts to rekindle his dying marriage.',
         'The answers will affect his popularity: nationally, in individual states, as well as with his husband Chasten.',
         'Choose carefully- as the choices you make will affect the questions you are given later on.',
-        'Content Warning: This game contains themes of war, brutality, and sensitive details of a homosexual male relationship.',
-        'We hope you enjoy this thought-provoking simulation!'
+        'Content Warning: This game contains themes of war, brutality, and sensitive details of a homosexual male relationship.'
     ];
     
     newItems.forEach(item => {
         const li = document.createElement('li');
         li.textContent = item;
+        li.style.textAlign = 'left'; // Explicitly set left alignment for each list item
         list.appendChild(li);
     });
-}
+        
 
-// Ensure the start button is visible and has the correct text
-const startButton = document.querySelector('#game_start');
-if (startButton) {
-    startButton.innerHTML = '<strong>Click here to begin!</strong>';
-    startButton.style.display = 'inline-block';
+    textContainer.appendChild(list);
+    container.appendChild(textContainer);
+    innerWindow.insertBefore(container, existingStartButton);
+
+    // If the start button didn't exist before, create it
+    if (!existingStartButton) {
+        const startButton = document.createElement('button');
+        startButton.id = 'game_start';
+        startButton.innerHTML = '<strong>Click here to begin!</strong>';
+        startButton.style.display = 'block';
+        startButton.style.margin = '20px auto 0';
+        innerWindow.appendChild(startButton);
+    }
 }
 
 campaignTrail_temp.modBoxTheme = {
@@ -75,7 +116,7 @@ campaignTrail_temp.modBoxTheme = {
 campaignTrail_temp.candidate_json = [
     {
         "model": "campaign_trail.candidate",
-        "pk": 1001,
+        "pk": 41733,
         "fields": {
             "first_name": "Pete",
             "last_name": "Buttigieg",
@@ -84,21 +125,67 @@ campaignTrail_temp.candidate_json = [
             "state": "Michigan",
             "priority": 1,
             "description": "<p>There is an idea of a Pete Buttigieg, some kind of abstraction, but there is no <i>real</i> Pete Buttigieg. There is only a man haunted by visions of greatness. He wouldn’t settle to be President; he wants to be <i>the</i> President.</p> \n\n<p>Since his days as the boy wonder of South Bend, Pete has been recalibrating, reinventing, always with an eye on the history books. The Rhodes Scholar, the veteran, the small-town mayor who dared to reach for the stars - each role carefully crafted, each failure transmuted into a stepping stone.</p>\n\n<p>Now fate has handed him the keys to the kingdom, through the tragedy of Warnock's assassination. And in the face of these slack-jawed yokels threatening to tear the country apart, Pete sees not just a crisis, but an opportunity. This is his <b>Lincoln </b>moment, his chance to stand astride the chasm of a divided nation and pull it back from the brink.</p>\n",
-            "color_hex": "#004d80",
+            "color_hex": "#0080FF",
             "secondary_color_hex": null,
             "is_active": 1,
             "image_url": "https://i.postimg.cc/7ZJqgRH1/buttigiegportrait.png",
-            "electoral_victory_message": "This guy wins!",
-            "electoral_loss_message": "This guy loses!",
-            "no_electoral_majority_message": "We all win?",
+            "electoral_victory_message": "",
+            "electoral_loss_message": "",
+            "no_electoral_majority_message": "",
             "description_as_running_mate": null,
             "candidate_score": 1,
             "running_mate": false
         }
     },
     {
+      "model": "campaign_trail.candidate",
+      "pk": 41849,
+      "fields": {
+          "first_name": "John",
+          "last_name": "Fetterman",
+          "election": 20,
+          "party": "War Democrat",
+          "state": "Tel Aviv",
+          "priority": 1,
+          "description": "",
+          "color_hex": "#00FF80",
+          "secondary_color_hex": null,
+          "is_active": 0,
+          "image_url": "https://i.postimg.cc/7ZJqgRH1/buttigiegportrait.png",
+          "electoral_victory_message": "",
+          "electoral_loss_message": "",
+          "no_electoral_majority_message": "",
+          "description_as_running_mate": null,
+          "candidate_score": 1,
+          "running_mate": false
+      }
+  },
+  {
+    "model": "campaign_trail.candidate",
+    "pk": 41791,
+    "fields": {
+        "first_name": "Brian",
+        "last_name": "Kemp",
+        "election": 20,
+        "party": "Republic",
+        "state": "Georgia",
+        "priority": 1,
+        "description": "",
+        "color_hex": "#FF0000",
+        "secondary_color_hex": null,
+        "is_active": 0,
+        "image_url": "https://i.postimg.cc/7ZJqgRH1/buttigiegportrait.png",
+        "electoral_victory_message": "",
+        "electoral_loss_message": "",
+        "no_electoral_majority_message": "",
+        "description_as_running_mate": null,
+        "candidate_score": 1,
+        "running_mate": false
+    }
+},
+    {
         "model": "campaign_trail.candidate",
-        "pk": 1002,
+        "pk": 41921,
         "fields": {
             "first_name": "Abigail",
             "last_name": "Spanberger",
@@ -111,9 +198,9 @@ campaignTrail_temp.candidate_json = [
             "secondary_color_hex": null,
             "is_active": 0,
             "image_url": "https://i.postimg.cc/VLwb9Rwp/photo-3.jpg",
-            "electoral_victory_message": "This guy wins!",
-            "electoral_loss_message": "This guy loses!",
-            "no_electoral_majority_message": "We all win?",
+            "electoral_victory_message": "",
+            "electoral_loss_message": "",
+            "no_electoral_majority_message": "",
             "description_as_running_mate": "\n\n<div style=\"max-height: 200px; overflow-y: auto;\"><p>Spanberger <i>knows</i> terror.</p>\n\n<p>Her years in the CIA were spent dismantling the same kind of insurgencies now setting America’s heartland ablaze. When she upset the political order with her House win, it wasn't just a victory; it was a blueprint, reshaping the Democratic Party in her image: tough, unyielding, and ruthless.</p> \n\n<p>As Governor of Virginia, Spanberger didn’t just govern—she fortified. While leaders in other blue states wrung their hands and let chaos spread, Spanberger built a bulwark against extremism. Take a drive through Shenandoah: peaceful, orderly. Now try that in rural Illinois or Washington, where spineless governance has turned highways into warzones.</p>\n\n<p>Spanberger doesn’t negotiate with terrorists; she eradicates them. But there’s always a cost. Whispers of her heavy-handed tactics and trampling of civil liberties are hard to ignore. To Buttigieg, though, that’s a price worth paying—as long as she delivers victories in the field and keeps the War Democrats in line.</p></div>\n",
             "candidate_score": 1,
             "running_mate": true
@@ -124,21 +211,21 @@ campaignTrail_temp.candidate_json = [
 campaignTrail_temp.running_mate_json = [
     {
         "model": "campaign_trail.running_mate",
-        "pk": 109261,
+        "pk": 20,
         "fields": {
-            "candidate": 1001,
-            "running_mate": 1002
+            "candidate": 41733,
+            "running_mate": 41921 
         }
     }
 ]
 
-campaignTrail_temp.credits = "<button onclick='credits()'>Many People</button>"
+campaignTrail_temp.credits = "<button onclick='credits()'>MANY PEOPLE</button>"
 
 credits = function() {
-  credits = [ "Made by Dog Lover with some help from my girlfriend. Design work was done with help from American Carnage as a reference for CSS/DOM manipulation stuff so credit goes to Thatchmaster, Accurate_Feature9970, and Obummer, and anyone else who may have helped with coding that."]
-  text = "CREDITS:\n\n"
+  credits = [ "Made by Dog Lover with some help from my girlfriend. Design work was done using American Carnage as reference- thanks to Thatchmaster, Accurate_Feature9970, and Obummer, and anyone else who may have helped with coding that."]
+  text = "CREDITS:"
   for (i in credits) {
-      text += credits[i] + "\n"
+      text += credits[i] 
   }
   alert(text)
 }
@@ -162,7 +249,7 @@ document.styleSheets[0].insertRule(`
   }
 `, 0);
 
-campaignTrail_temp.global_parameter_json[0].fields.question_count = 30
+campaignTrail_temp.global_parameter_json[0].fields.question_count = 25
 
 campaignTrail_temp.temp_election_list = [
     {
@@ -177,7 +264,7 @@ campaignTrail_temp.opponents_default_json = [
     {
         "election": 20,
         "candidates": [
-            1001
+        41849, 41791 
         ]
     }
 ]
@@ -186,7 +273,7 @@ campaignTrail_temp.opponents_weighted_json = [
     {
         "election": 20,
         "candidates": [
-            1001
+        41849, 41791 
         ]
     }
 ]
@@ -222,19 +309,71 @@ campaignTrail_temp.opponents_weighted_json = [
           customquote = quotes[Math.floor((Math.random() * quotes.length))]
   
   
-        
-  
-  
   
   
   
   e = campaignTrail_temp
   
   document.head.innerHTML += `
-  <link rel="stylesheet" href="https://kexanie.github.io/csswin10">
   <style>
+     .shake {
+    display: inline-block;
+    animation: shake 7s ease-in-out infinite;
+  }
+
+@keyframes shake {
+    0% { transform: translate(0.5px, 0.5px) rotate(0deg); }
+    10% { transform: translate(-0.3px, -0.5px) rotate(-0.5deg); }
+    20% { transform: translate(-1px, 0px) rotate(0.5deg); }
+    30% { transform: translate(0.5px, 1px) rotate(0deg); }
+    40% { transform: translate(0.3px, -0.5px) rotate(0.5deg); }
+    50% { transform: translate(-0.3px, 0.5px) rotate(-0.5deg); }
+    60% { transform: translate(-0.5px, 0.1px) rotate(0deg); }
+    70% { transform: translate(0.5px, 0.3px) rotate(-0.5deg); }
+    80% { transform: translate(-0.1px, -0.1px) rotate(0.5deg); }
+    90% { transform: translate(0.5px, 1px) rotate(0deg); }
+    100% { transform: translate(0.5px, -1px) rotate(-0.5deg); }
+}
+@keyframes grow-shrink {
+  0% { transform: scale(1); }          /* Original size */
+  25% { transform: scale(1.05); }      /* Slightly larger */
+  50% { transform: scale(1); }         /* Back to original size */
+  75% { transform: scale(0.95); }      /* Slightly smaller */
+  100% { transform: scale(1); }        /* Back to original size */
+}
+.grow-shrink-effect {
+  display: inline-block;
+  animation: grow-shrink 2s ease-in-out infinite;
+}
+
+@keyframes fire-flicker {
+    0% { color: #ff6347; text-shadow: 0 0 3px #ff8c00; }
+  25% { color: #ff7f50; text-shadow: 0 0 4px #ffa500; }
+  50% { color: #ff8c00; text-shadow: 0 0 5px #ff7f50; }
+  75% { color: #ffa500; text-shadow: 0 0 4px #ff6347; }
+  100% { color: #ff6347; text-shadow: 0 0 3px #ff8c00; }
+}
+
+.fiery-effect {
+font-weight: bold;
+  font-size: 1.1em;
+  animation: fire-flicker 8s infinite alternate;
+}
+#credits {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    margin: 0;
+    padding: 5px;
+    font-size: 0.9em;
+}
+#question_form label {
+    font-size: 0.9em !important; /* Adjust as needed */
+    line-height: 1.2;
+}
+
   h3 {
-    font-size: 1.025em !important;
+    font-size: 1.225em !important;
     line-height: 17px;
   }
   button {
@@ -302,7 +441,6 @@ button:active {
 }
 #game_window {
     max-width: 1000px; /* Reduce max-width to give it a tighter fit */
-    margin: 0 auto; /* Center the content */
 }
   #election_summary {
     padding: 0.5em !important; /* Reduce padding */
@@ -433,36 +571,6 @@ button:active {
   
   
   RecReading=true
-    
-  // Select the node that will be observed for mutations
-  const windowsAdvisorTargetNode = document.getElementById("game_window");
-  
-  // Options for the observer (which mutations to observe)
-  const windowsAdvisorConfig = { attributes: true, childList: true, subtree: true };
-  
-  // Callback function to execute when mutations are observed
-  const callback = (mutationList, observer) => {
-      visitWindow = document.getElementsByClassName("overlay_window")[0];
-  
-      if(visitWindow == null || visitWindow.classList.contains("done")) {
-          return;
-      }
-      visitWindow.classList.add("done");
-      visitWindow.classList.add("window");
-      
-      let titleBar = visitWindow.querySelector("h3");
-      titleBar.classList.add("title-bar");
-      titleBar.classList.add("title-bar-text");
-      titleBar.style.paddingLeft = "0px";
-      
-  };
-  
-  // Create an observer instance linked to the callback function
-  const observer = new MutationObserver(callback);
-  
-  // Start observing the target node for configured mutations
-  observer.observe(windowsAdvisorTargetNode, windowsAdvisorConfig);
-  
   
   class Song {
     constructor(title, artist, coverLink, audioLink) {
@@ -824,6 +932,7 @@ button:active {
   #cover {
     width: 150px;
     height: 150px;
+    margin: 0px 0px 0px 80px;
     border: 3px solid;
     border-image: linear-gradient(45deg, #004d80, #eef4f8) 1;
     border-radius: 0px;
