@@ -973,15 +973,10 @@ addDynamicCSS();
   });
   
     audio.addEventListener("timeupdate", updateProgressBar);
-    audio.addEventListener("ended", function () {
-      // Play the next song when the current song ends
-      playlist.playNext();
-      updateUI(playlist);
-      audio.src = playlist.getCurrentSong().audioLink;
-      audio.play();
-    });
-  
-      let currentVolume = 1; // Initial volume
+    let isTransitioning = false; // Flag to prevent overlapping operations
+
+
+      let currentVolume = 4; // Initial volume
   
     volumeSlider.addEventListener("input", function () {
       currentVolume = parseInt(volumeSlider.value, 10);
@@ -1024,9 +1019,13 @@ addDynamicCSS();
   function updateProgressBar() {
     const audio = document.getElementById("audio");
     const progressBar = document.getElementById("progress-bar");
-    const progress = (audio.currentTime / audio.duration) * 100;
-    if (progressBar) {
-      progressBar.value = progress;
+    
+    // Check if the duration is a valid number before updating the progress bar
+    if (audio.duration && !isNaN(audio.duration) && isFinite(audio.duration)) {
+      const progress = (audio.currentTime / audio.duration) * 100;
+      if (progressBar) {
+        progressBar.value = progress;
+      }
     }
   }
   
@@ -1148,8 +1147,6 @@ addDynamicCSS();
   
   @font-face {
     font-family: 'Agency FB';
-    src: url('path-to-your-agency-fb-font-file.woff2') format('woff2'),
-         url('path-to-your-agency-fb-font-file.woff') format('woff');
     font-weight: normal;
     font-style: normal;
   }
