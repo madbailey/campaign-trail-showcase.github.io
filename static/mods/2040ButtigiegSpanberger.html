@@ -140,6 +140,24 @@ campaignTrail_temp.questions_json = [
             "description": "Late at night in the Oval Office, you’re briefed on the so-called \"Arkansas Problem\"—a major arms trafficking center in Arkansas that's off-limits due to state opposition. Some of the boys from Langley propose using lone wolf operatives for a covert solution. How do you handle it?",
             "likelihood": 1
         }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 42127,
+        "fields": {
+            "priority": 0,
+            "description": "John Fetterman has been relentless in his criticism of your administration, attacking you for being too soft on the insurgency. As a leading voice of the 'War Democrats,' he’s called for a more aggressive federal response, and with the primary fast approaching, it’s clear he’s positioning himself to challenge you directly. How are you going to respond?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 42136,
+        "fields": {
+            "priority": 0,
+            "description": "While reading in bed, your husband turns to you and tells you that he's thought of an idea. Something for his signature project—that could occupy his time. He calls it \"Yes, And—America!\" The idea is to promote improv comedy in schools as a way to bridge political divides and foster empathy. He's clearly excited and wants your input.",
+            "likelihood": 1
+        }
     }
 ]
 
@@ -445,7 +463,7 @@ campaignTrail_temp.answers_json = [
         "pk": 42109,
         "fields": {
             "question": 42108,
-            "description": "The dollar being the world’s reserve currency is bleeding us dry. We should attempt to renegotiate this."
+            "description": "Our status as the world reserve currency is hollowing out American industry. You know, Keynes, he warned us about the risks of this kind of system. It’s time we rethink our position—this 'privilege' isn't cutting it."
         }
     },
     {
@@ -501,7 +519,7 @@ campaignTrail_temp.answers_json = [
         "pk": 42121,
         "fields": {
             "question": 42117,
-            "description": "Abigail Spanberger led Virginia during one of the most challenging periods in recent history. The decisions made were difficult, but they were made with the intention of protecting the people of Virginia and ensuring public safety. I stand by Governor Spanberger and her record of leadership."
+            "description": "Abigail Spanberger led Virginia during one of the most challenging periods in recent history. The decisions made were difficult, but they were made with the intention of protecting the people of Virginia and ensuring public safety. "
         }
     },
     {
@@ -534,6 +552,62 @@ campaignTrail_temp.answers_json = [
         "fields": {
             "question": 42122,
             "description": "Forget subtlety. We’ll use our tech—drones, overwhelming force—to make a show of strength. President Eisenhower didn’t build the Military-Industrial Complex for fun—he built it to keep us safe. And that’s exactly what we’re going to use it for. \n"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 42128,
+        "fields": {
+            "question": 42127,
+            "description": "John and I both care deeply about the security of this nation. I'll reach out to him for a private meeting, try to find some common ground, and invite him to work together on a unified strategy. If we can present a united front, it will benefit the entire country—and show the public that we're on the same side when it matters most."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 42129,
+        "fields": {
+            "question": 42127,
+            "description": "Frankly, I think his health is affecting his judgment. We’ll start to quietly raise concerns about whether he’s really up to the challenge of leading in such a volatile time."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 42130,
+        "fields": {
+            "question": 42127,
+            "description": "This is an image issue, so we need a good photo op. Lets get cameras are rolling, and I’ll be front and center, surrounded by law enforcement and national security officials. It’s time to remind people who drops the bombs."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 42131,
+        "fields": {
+            "question": 42127,
+            "description": "John wants an all-out war, but that’s not what’s best for this country. I’m not going to be bullied into a reckless escalation that could lead to more chaos. I’ll make my case directly to the voters: my approach is focused, deliberate, and ultimately aimed at a lasting peace."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 42141,
+        "fields": {
+            "question": 42136,
+            "description": "Well, I think this idea is really creative and it's certainly something we should think about. But I'm wondering if it really uh- meets the moment?"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 42142,
+        "fields": {
+            "question": 42136,
+            "description": "This is a great idea, we need something to lighten the mood in this nation. I'll commit to this wholeheartedly (-3 budget)"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 42143,
+        "fields": {
+            "question": 42136,
+            "description": "Oh umm, yeah yeah that's a good, idea. Let's run this by uh David. The Education Secretary. He'll work it in to the current- you know budget and stuff. "
         }
     }
 ]
@@ -6736,6 +6810,105 @@ campaignTrail_temp.answer_feedback_json = [
             "candidate": 41733,
             "answer_feedback": "The mood in the meeting immediately shifts. Patel’s eyes narrow, clearly alarmed by the direction of your proposal. Council of Economic Advisers Chair Lucia Alvarez abruptly threatens to resign, accusing you of taking the path of dictators like in Cuba and Venezuela. "
         }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 42132,
+        "fields": {
+            "answer": 42128,
+            "candidate": 41733,
+            "answer_feedback": "Fetterman declined the meeting, which is disappointing but not surprising given how far he’s gone to set himself apart. The media might frame this as a snub, but people will remember that you extended the olive branch. "
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 42133,
+        "fields": {
+            "answer": 42129,
+            "candidate": 41733,
+            "answer_feedback": "The narrative about his health is catching on a bit—especially with folks already on the fence. The backlash from his core supporters was expected, but let’s be honest, Pete, you didn’t lose anything there. "
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 42134,
+        "fields": {
+            "answer": 42131,
+            "candidate": 41733,
+            "answer_feedback": "Your message hit the right note with a lot of voters who are exhausted by all the conflict. Moderates and independents are responding positively to your steady, rational tone. Fetterman’s attacks are still coming, but that’s because he has to go all-in on aggression—it’s all he’s got."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 42135,
+        "fields": {
+            "answer": 42130,
+            "candidate": 41733,
+            "answer_feedback": "The operation went well, and the visuals are exactly what we wanted: you looking strong, decisive, and hands-on. Fetterman’s calling it a stunt, but honestly, that just shows he’s scrambling to find something negative to say. "
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 42137,
+        "fields": {
+            "answer": 42118,
+            "candidate": 41733,
+            "answer_feedback": "The call for transparency isn’t landing the way we hoped, Pete. Rather than coming off as a principled stand, it’s making the administration look reactive and defensive. Republicans are painting this as a tacit admission of guilt, and the public is buying it."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 42138,
+        "fields": {
+            "answer": 42119,
+            "candidate": 41733,
+            "answer_feedback": "The \"rogue actors\" line is holding up okay. Honestly, it’s what most people expected you to say, and it hasn’t moved the needle much either way. "
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 42139,
+        "fields": {
+            "answer": 42120,
+            "candidate": 41733,
+            "answer_feedback": "The silence is playing out pretty much as expected. Those who support you see this as refusing to bow to partisan attacks, and the ones who already had doubts are taking it as further proof of wrongdoing. Nothing’s really changed, and that’s probably a win in a situation like this. "
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 42140,
+        "fields": {
+            "answer": 42121,
+            "candidate": 41733,
+            "answer_feedback": "Standing by Spanberger hasn’t changed anyone’s mind. Your base sees this as loyalty, which they admire, while critics are hammering the same talking points they’ve been using for weeks. Most see this as partisan bickering and tune out. "
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 42144,
+        "fields": {
+            "answer": 42141,
+            "candidate": 41733,
+            "answer_feedback": "For the next few days, Chasten is quiet, and you feel a growing tension. After a few days of the cold shoulder- you take it upon yourself to find another bed to sleep on. "
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 42145,
+        "fields": {
+            "answer": 42142,
+            "candidate": 41733,
+            "answer_feedback": "The backlash is immediate- late-night shows and social media pile on, mocking it as an out-of-touch, frivolous use of time and resources. Chasten seems discouraged by the negativity, but he appreciates your support, even if your political advisors don't."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 42146,
+        "fields": {
+            "answer": 42143,
+            "candidate": 41733,
+            "answer_feedback": "Chasten gives you a small smile, and is satisfied. In the end the project does make it to a few pilot school, after reappropriating funds originally meant for new text books. It keeps him busy."
+        }
     }
 ]
 
@@ -6775,47 +6948,6 @@ campaignTrail_temp.jet_data = [{
 ]
 
 
-
-campaignTrail_temp.candidate_image_url = "https://i.postimg.cc/7ZJqgRH1/buttigiegportrait.png";
-campaignTrail_temp.running_mate_image_url = "https://i.postimg.cc/VLwb9Rwp/photo-3.jpg";
-campaignTrail_temp.candidate_last_name = "Buttigieg";
-campaignTrail_temp.running_mate_last_name = "Spanberger";
-
-
-
-campaignTrail_temp.jet_data = [{
-    "mapping_enabled": true,
-    "mapping_data": {
-        "mapSvg": "",
-        "x": "600",
-        "y": "600",
-        "dx": "40",
-        "dy": 0
-    },
-    "nicknames": {
-        "41733": "Boot-Edge-Edge",
-        "41791": "Zeldin",
-        "41849": "Fetterman",
-        "41921": "Spanberger",
-        "41993": "Libertarian"
-    },
-    "banner_enabled": true,
-    "banner_data": {
-        "canName": "Buttigieg",
-        "runName": "Spanberger",
-        "canImage": "https://i.postimg.cc/7ZJqgRH1/buttigiegportrait.png",
-        "runImage": "https://i.postimg.cc/VLwb9Rwp/photo-3.jpg"
-    },
-    "cyoa_enabled": true,
-    "cyoa_data": {}
-}
-]
-
-
-campaignTrail_temp.candidate_image_url = "https://i.postimg.cc/7ZJqgRH1/buttigiegportrait.png";
-campaignTrail_temp.running_mate_image_url = "https://i.postimg.cc/VLwb9Rwp/photo-3.jpg";
-campaignTrail_temp.candidate_last_name = "Buttigieg";
-campaignTrail_temp.running_mate_last_name = "Spanberger";
 
 e = campaignTrail_temp;
 
